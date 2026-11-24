@@ -10,7 +10,7 @@ var heading := Vector2i.RIGHT
 var _turns: Array[Vector2i] = []  # turns wait here until the next tick (Command)
 
 
-func _init(grid_size: Vector2i, length := 250) -> void:
+func _init(grid_size: Vector2i, length := 4) -> void:
 	size = grid_size
 	@warning_ignore("integer_division")  # the middle cell, rounded down, on purpose
 	var start := grid_size / 2
